@@ -1,10 +1,10 @@
 ---
-title: A mountain escape
-description: Transform your wedding moments into lasting memories amidst California's majestic mountains.
+title: 10-Day Vipassana Course
+description: A transformative journey of self-discovery through ancient meditation practices in the peaceful Canadian countryside.
 heroImage: ./couple-9-square.jpg
 date: "Aug 5 2024"
-location: Malibu, California
-clients: [Hannah, Marco]
+location: Dhamma Suttama, Quebec
+clients: [Sarah, Michael]
 images:
   [
     [./couple-2-min-1.jpg, ./couple-2-min-1.jpg],
@@ -15,4 +15,4 @@ images:
 order: 1
 ---
 
-This Malibu wedding was a breathtaking affair. The stunning mountain views provided a picturesque backdrop. The photographs beautifully captured the intimate moments, the vibrant energy, and the overall romantic ambiance of the day.
+This 10-day Vipassana meditation course was a life-changing experience. The serene natural setting of Dhamma Suttama provided the perfect environment for deep introspection and spiritual growth. The ancient technique of observing breath and bodily sensations led to profound insights about the nature of mind and reality, creating lasting transformation for both participants.

@@ -1,10 +1,10 @@
 ---
-title: A high-class affair
-description: Relive the elegance of your venue and the grandeur of your wedding through artistic photography.
+title: Open House Experience
+description: Discover the peaceful environment and welcoming community at Dhamma Suttama through our Open House events.
 heroImage: ./couple-4-square.jpg
-date: "Apr 15 2024"
-location: Houston, Texas
-clients: [Julia, David]
+date: "Sep 21 2024"
+location: Dhamma Suttama, Quebec
+clients: [Visitors, Community]
 images:
   [
     [./couple-2-min-3.jpg, ./couple-2-min-3.jpg],
@@ -15,4 +15,4 @@ images:
 order: 3
 ---
 
-This Malibu wedding was a breathtaking affair. The stunning mountain views provided a picturesque backdrop. The photographs beautifully captured the intimate moments, the vibrant energy, and the overall romantic ambiance of the day.
+This Open House at Dhamma Suttama was an inspiring gathering. Visitors from all backgrounds came together to learn about Vipassana meditation and explore the peaceful centre. The welcoming atmosphere and informative presentations created the perfect introduction to this ancient practice, with many attendees deciding to register for upcoming 10-day courses.

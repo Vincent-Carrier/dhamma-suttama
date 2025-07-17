@@ -1,6 +1,6 @@
 ---
-title: JOSÉ & MELANIE
-testimonial: Jenna has a way of making us feel like the only people in the room. The photos she delivered were beyond our expectations, capturing the joy, love, and beauty of our special day in a way that we will treasure forever.
+title: SARAH & MICHAEL
+testimonial: After completing our first 10-day Vipassana course at Dhamma Suttama, we discovered a profound sense of inner peace and clarity. The technique has transformed how we handle stress and relate to each other. The silent environment and dedicated practice created the perfect conditions for deep self-observation and growth.
 image: ./couple-8-crop.jpg
 order: 1
 ---

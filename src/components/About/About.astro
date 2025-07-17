@@ -3,29 +3,46 @@
  * * About section
  */
 
-import profileImage from "@assets/images/photographer-min.jpg";
+import profileImage from "@assets/images/leaves.jpg";
 import { Image } from "astro:assets";
 ---
 
 <section id="about" class="site-container scroll-mt-10 py-8 md:py-12">
 	<div class="flex flex-col md:flex-row">
 		<div class="md:w-2/3">
-			<h2 class="h3 text-primary-500 text-pretty uppercase">Meet your photographer</h2>
-			<h3 class="h2 mt-4">Jenna Marie</h3>
-			<div class="bg-base-100 mt-8 p-8 md:mb-20 lg:text-lg">
+			<h2 class="h3 text-primary-500 text-balance uppercase">
+				Bienvenue au Centre de méditation Vipassana du Québec
+			</h2>
+			<!-- <h3 class="h2 mt-4">Jenna Marie</h3> -->
+			<div class="bg-base-100 mt-8 p-8 md:mb-8 lg:text-lg">
 				<p>
-					I specialize in capturing the unique beauty and joy of your special day. With a passion
-					for storytelling and a keen eye for detail, I strive to create timeless images that
-					reflect your love and personality. Whether it's a beachfront ceremony, a vineyard
-					reception, or a city hall elopement, I am dedicated to providing you with exceptional
-					photography.
+					La vocation du Centre est d'offrir des cours de méditation Vipassana telle qu'enseignée
+					par S.N. Goenka. La méditation Vipassana est une technique simple, concrète et non
+					sectaire pour accéder à une réelle tranquillité d'esprit et mener une vie heureuse et
+					paisible. Bien qu'issue des enseignements du Bouddha, elle peut être pratiquée par tous,
+					sans distinction de race, de milieu ou de religion et elle se révélera également salutaire
+					pour tous.
 				</p>
-				<div class="flex w-3/4 justify-end">
+				<!-- <div class="flex w-3/4 justify-end">
 					<p class="font-heading-1 text-3xl italic">- Jenna</p>
-				</div>
+				</div> -->
+			</div>
+			<div class="flex flex-col gap-4 px-8">
+				<p>
+					Le Centre de méditation Vipassana du Québec, aussi nommé Dhamma Suttama, signifiant, dans
+					la langue pali, « Le meilleur du Dhamma », est l'un des 245 centres à travers le monde
+					entièrement consacrés à l'enseignement et à la pratique de la méditation Vipassana telle
+					qu'enseignée par S.N. Goenka. Il est situé à mi-chemin entre Montréal et Gatineau/Ottawa,
+					à cinq kilomètres au nord de Montebello.
+				</p>
+				<p>
+					Sur un site vaste et remarquable, dans une grande vallée paisible au milieu d'une forêt,
+					le Centre peut accueillir près de 150 étudiants par cours. Acquis en février 2011, le
+					centre poursuit la mission de celui préalablement établi à Sutton (1999-2011)
+				</p>
 			</div>
 		</div>
-		<div class="mr-auto max-w-md md:w-1/3 md:max-w-none">
+		<div class="mt-20 mr-auto max-w-md md:w-1/3 md:max-w-none">
 			<div class="my-auto aspect-[3/4] w-full overflow-hidden">
 				<Image
 					src={profileImage}
