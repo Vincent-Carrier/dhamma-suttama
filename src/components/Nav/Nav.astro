@@ -24,9 +24,9 @@ const { startStyle = "default", rest } = Astro.props as Props;
 		<div class="site-container flex h-16 w-full items-center">
 			<header class="flex w-full items-center gap-2">
 				<!-- home button / image -->
-				<div class="flex flex-auto justify-start">
+				<!-- <div class="flex flex-auto justify-start">
 					<SiteLogo />
-				</div>
+				</div> -->
 
 				<!-- desktop nav menu -->
 				<div class="flex flex-auto justify-end lg:gap-4">
@@ -44,15 +44,25 @@ const { startStyle = "default", rest } = Astro.props as Props;
 									),
 								)
 							}
+							<NavDropdown
+								navItem={{
+									text: "FR",
+									dropdown: [
+										{ text: "EN", link: "/en/" },
+										{ text: "FR", link: "/fr/" },
+									],
+								}}
+								class="text-base-900"
+							/>
 						</ul>
 					</nav>
 					<Button
 						variant="secondary"
-						class=`nav__cta py-1 my-auto hidden md:block ${startStyle === "white" ? "data-[scrolled=true]:border-primary-200 data-[scrolled=true]:hover:border-primary-200/80" : "border-primary-200"}`
+						class=`nav__cta py-1 my-auto hidden md:block ${startStyle === "white" ? "data-[scrolled=true]:border-primary-700 data-[scrolled=true]:hover:border-primary-200/80" : "border-primary-200"}`
 						href="https://cosmicthemes.com/themes/horizon/"
 						data-scrolled="false"
 					>
-						Get Horizon
+						Calendrier
 					</Button>
 
 					<!-- mobile nav menu, only load on small screens where it is visible -->

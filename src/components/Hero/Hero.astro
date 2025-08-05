@@ -8,6 +8,8 @@ import Button from "@components/Button/Button.astro";
 import heroImage from "@images/mountains.jpg";
 import heroImageMobile from "@images/mountains.jpg";
 import { Image } from "astro:assets";
+
+const { description } = Astro.props;
 ---
 
 <section id="hero" class="relative z-10 flex min-h-[30lvh] w-full">
@@ -43,13 +45,9 @@ import { Image } from "astro:assets";
 				Dhamma Suttama
 			</h1>
 			<p
-				class="mt-8 text-lg tracking-widest text-balance drop-shadow-[0_1px_1px_rgba(0,0,0,0.2)] md:max-w-[800px] md:text-2xl"
+				class="mt-8 text-lg text-balance drop-shadow-[0_1px_1px_rgba(0,0,0,0.2)] md:max-w-[800px] md:text-2xl"
 			>
-				La vocation du Centre est d'offrir des cours de méditation Vipassana telle qu'enseignée
-				par S.N. Goenka. La méditation Vipassana est une technique simple, concrète et non sectaire
-				pour accéder à une réelle tranquillité d’esprit et mener une vie heureuse et paisible. Bien
-				qu'issue des enseignements du Bouddha, elle peut être pratiquée par tous, sans distinction
-				de race, de milieu ou de religion et elle se révélera également salutaire pour tous.
+				{description}
 			</p>
 			<!-- <div class="mt-10 flex flex-wrap justify-center gap-4 md:justify-start">
 				<Button
