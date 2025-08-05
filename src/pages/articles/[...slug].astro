@@ -2,26 +2,28 @@
 // layout
 import { type InferGetStaticPropsType } from "astro";
 import { type CollectionEntry, getCollection, render } from "astro:content";
-import strapi from "@/lib/strapi";
-import BaseLayout from "@layouts/BaseLayout.astro";
+import strapi, { resolveRichText } from "@/lib/strapi";
+import ArticleLayout from "@layouts/ArticleLayout.astro";
 
 export async function getStaticPaths() {
-	const portfolios = await getCollection("portfolios", ({ data }) => {
-		// filter out draft pages
-		return data.draft !== true;
-	});
-
-	return portfolios.map((portfolio) => ({
-		params: { slug: portfolio.id },
-		props: portfolio,
+	// TODO: filter drafts outside devmode
+	const { data: articles } = await strapi.collection("articles").find();
+	// console.log(articles);
+	return articles.map((a) => ({
+		params: { slug: a.slug },
+		props: a,
 	}));
 }
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
-const { slug } = Astro.params
-const article = await strapi.
+const { slug } = Astro.params;
+const { data } = await strapi
+	.collection("articles")
+	.find({ populate: "*", locale: Astro.currentLocale, filters: { slug: { $eq: slug } } });
+const article = data[0];
+console.dir(article.content, { depth: null });
 ---
 
-<BaseLayout title="" description="">
-	<div set:html={article.attributes.content} />
-</BaseLayout>
+<ArticleLayout article={article}>
+	<div class="" set:html={resolveRichText(article.content)} />
+</ArticleLayout>
