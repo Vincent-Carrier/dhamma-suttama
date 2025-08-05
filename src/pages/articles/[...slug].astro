@@ -1,0 +1,27 @@
+---
+// layout
+import { type InferGetStaticPropsType } from "astro";
+import { type CollectionEntry, getCollection, render } from "astro:content";
+import strapi from "@/lib/strapi";
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+	const portfolios = await getCollection("portfolios", ({ data }) => {
+		// filter out draft pages
+		return data.draft !== true;
+	});
+
+	return portfolios.map((portfolio) => ({
+		params: { slug: portfolio.id },
+		props: portfolio,
+	}));
+}
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { slug } = Astro.params
+const article = await strapi.
+---
+
+<BaseLayout title="" description="">
+	<div set:html={article.attributes.content} />
+</BaseLayout>
